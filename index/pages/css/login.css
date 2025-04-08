@@ -1,0 +1,172 @@
+/* ASUS White Theme */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: left;
+    padding: 10px 20px;
+}
+
+.asus-logo {
+    width: 100px;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.login-box {
+    display: flex;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 90%;
+}
+
+.info-section {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.info-image {
+    width: 100%;
+    max-width: 250px;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.features i {
+    color: #0056b3;
+}
+
+.login-section {
+    flex: 1;
+    padding-left: 20px;
+    border-left: 1px solid #ddd;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    color: #333;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    width: calc(100% - 30px);
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #0056b3;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #004494;
+}
+
+.divider {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+}
+
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.social-btn i {
+    color: #333;
+}
+
+.signup-text {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.signup-text a {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}

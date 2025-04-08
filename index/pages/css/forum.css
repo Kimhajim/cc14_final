@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: red;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('background.jpg') no-repeat center center/cover;
+}
+
+.search-bar {
+    margin-top: 20px;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.content-box {
+    background: #222;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.latest-solutions {
+    text-align: center;
+    padding: 40px 20px;
+    background: black;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+}

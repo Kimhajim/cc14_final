@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PC Shop - Gaming Gear</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#111] text-white font-sans">
+
+  <!-- Header -->
+  <header class="flex justify-between items-center flex-wrap p-4 px-16 bg-black relative">
+    <div class="logo">
+      <img src="public/icon.svg" alt="Logo" class="w-28 h-auto" />
+    </div>
+
+    <!-- Search -->
+    <div class="flex items-center bg-[#222] rounded px-2 py-1">
+      <input
+        type="text"
+        placeholder="Search..."
+        class="bg-[#333] text-white px-3 py-2 rounded border border-[#555] focus:outline-none focus:bg-[#444] focus:border-red-600 w-48"
+      />
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav-links hidden md:flex gap-6">
+      <ul class="flex list-none space-x-6">
+        <li><a href="index.html" class="text-white hover:bg-red-600 px-4 py-2 rounded transition">HOME</a></li>
+        <li><a href="pages/aura.html" class="text-white hover:bg-red-600 px-4 py-2 rounded transition">INNOVATION</a></li>
+        <li><a href="pages/download.html" class="text-white hover:bg-red-600 px-4 py-2 rounded transition">DOWNLOADS</a></li>
+        <li><a href="pages/forum.html" class="text-white hover:bg-red-600 px-4 py-2 rounded transition">COMMUNITY</a></li>
+        <li><a href="pages/hot.html" class="text-white hover:bg-red-600 px-4 py-2 rounded transition">WHAT'S HOT</a></li>
+        <li><a href="pages/support.html" class="text-white hover:bg-red-600 px-4 py-2 rounded transition">SUPPORT</a></li>
+      </ul>
+    </nav>
+
+    <!-- Menu Button -->
+    <button id="menuToggle" class="menu-button bg-orange-600 text-white px-4 py-2 rounded hover:bg-orange-700 text-lg md:hidden">
+      ☰ Menu
+    </button>
+
+    <!-- Dropdown Menu -->
+    <div id="menuContent" class="absolute top-16 right-5 bg-[#222] w-44 p-3 rounded-lg shadow-lg hidden z-50">
+      <ul class="space-y-2">
+        <li><a href="pages/login.html" class="block font-bold hover:bg-[#333] rounded px-2 py-1">Login</a></li>
+        <li><a href="pages/signup.html" class="block font-bold hover:bg-[#333] rounded px-2 py-1">Sign Up</a></li>
+        <li><a href="pages/contact.html" class="block font-bold hover:bg-[#333] rounded px-2 py-1">Contact us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Banner Slider -->
+  <section class="banner-slider relative w-full overflow-hidden">
+    <div class="slider flex transition-transform duration-500 ease-in-out">
+      <div class="slide w-full flex-shrink-0">
+        <img src="public/fwebp.webp" alt="Slide 1" class="w-full h-auto" />
+      </div>
+      <div class="slide w-full flex-shrink-0">
+        <img src="public/i2.webp" alt="Slide 2" class="w-full h-auto" />
+      </div>
+      <div class="slide w-full flex-shrink-0">
+        <img src="public/i3.webp" alt="Slide 3" class="w-full h-auto" />
+      </div>
+    </div>
+    <div class="chevron chevron-left absolute top-1/2 left-3 text-red-600 text-3xl cursor-pointer -translate-y-1/2 hover:text-red-400">&#10094;</div>
+    <div class="chevron chevron-right absolute top-1/2 right-3 text-red-600 text-3xl cursor-pointer -translate-y-1/2 hover:text-red-400">&#10095;</div>
+  </section>
+
+  <!-- Product Highlights -->
+  <section class="py-16 px-6 text-center">
+    <h2 class="text-4xl mb-10 font-semibold">Featured Products</h2>
+    <div class="flex justify-center flex-wrap gap-8">
+      <a href="pages/gaming.html" class="card bg-[#111] w-72 p-6 rounded-xl shadow-lg hover:scale-105 transition hover:shadow-red-600 cursor-pointer">
+        <div class="text-xl font-bold">GAMING</div>
+      </a>
+      <a href="pages/workstation.html" class="card bg-[#111] w-72 p-6 rounded-xl shadow-lg hover:scale-105 transition hover:shadow-red-600 cursor-pointer">
+        <div class="text-xl font-bold">WORKSTATION</div>
+      </a>
+      <a href="pages/custom.html" class="card bg-[#111] w-72 p-6 rounded-xl shadow-lg hover:scale-105 transition hover:shadow-red-600 cursor-pointer">
+        <div class="text-xl font-bold">CUSTOM</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Community Section -->
+  <section class="bg-[#222] py-16 px-6 text-center">
+    <h2 class="text-3xl font-semibold mb-4">Join the Community</h2>
+    <p>Social media and latest news links.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black py-6 text-center">
+    <p class="text-gray-400 text-base">&copy; 2025 PC Shop. All rights reserved.</p>
+  </footer>
+
+  <!-- Cookie Banner -->
+  <div id="cookie-banner" class="fixed bottom-0 left-0 w-full bg-[#111] text-white text-center p-4 text-sm hidden z-50">
+    <p>This website uses cookies to ensure you get the best experience.
+      <button id="accept-cookie" class="ml-4 bg-red-600 text-white px-4 py-1 rounded hover:bg-red-400 text-sm">Accept</button>
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Center</title>
+    <link rel="stylesheet" href="css/download.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-black p-4 text-white">
+        <div class="text-3xl font-bold">ROG Download Center</div>
+    </header>
+
+    <!-- Search Section -->
+    <section class="bg-white p-6 shadow-md mt-4">
+        <div class="max-w-4xl mx-auto">
+            <input type="text" placeholder="Search Downloads..." class="p-3 w-full rounded-md border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="p-6 bg-gray-50">
+        <div class="max-w-4xl mx-auto flex space-x-4">
+            <select class="p-3 w-1/4 rounded-md border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <option>Category</option>
+                <option>Software</option>
+                <option>BIOS</option>
+                <option>Driver</option>
+            </select>
+            <select class="p-3 w-1/4 rounded-md border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <option>Product</option>
+                <option>ROG Laptop</option>
+                <option>ROG Motherboard</option>
+            </select>
+            <select class="p-3 w-1/4 rounded-md border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <option>Operating System</option>
+                <option>Windows 10</option>
+                <option>Windows 11</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- Content Grid -->
+    <section class="py-8">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="font-semibold">ROG Software Collection</h3>
+                <p class="text-sm text-gray-500">Download the latest ROG software to enhance your gaming experience.</p>
+                <button class="mt-4 p-2 bg-blue-500 text-white rounded-md">Download</button>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="font-semibold">ROG BIOS Update</h3>
+                <p class="text-sm text-gray-500">Keep your system up to date with the latest BIOS version.</p>
+                <button class="mt-4 p-2 bg-blue-500 text-white rounded-md">Download</button>
+            </div>
+            <!-- Add more content boxes here as needed -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white p-4 text-center">
+        <p>&copy; 2025 Republic of Gamers. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
